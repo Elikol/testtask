@@ -110,9 +110,9 @@ else:
 
 kstest = stats.ks_2samp(test_sample, index_sample)
 if kstest.pvalue > 0.05:
-    print "Тест Колмоговора-Смирнова: Распределения выборок равны на уровне 5%, p-value =", kstest.pvalue, "Cтатистика теста", kstest.statistic
+    print "Тест Колмогорова-Смирнова: Распределения выборок равны на уровне 5%, p-value =", kstest.pvalue, "Cтатистика теста", kstest.statistic
 else:
-    print "Тест Колмоговора-Смирнова: Распределения выборок не равны, p-value =", kstest.pvalue, "Cтатистика теста", kstest.statistic
+    print "Тест Колмогорова-Смирнова: Распределения выборок не равны, p-value =", kstest.pvalue, "Cтатистика теста", kstest.statistic
 
 mwtest = stats.mannwhitneyu(test_sample, index_sample)
 if mwtest.pvalue > 0.05:
